@@ -11,16 +11,14 @@ Xandikos can be installed from pypi using pip by running::
 Git
 ###
 
-You can either clone the Xandikos repository at `GitHub <https://github.com/jelmer/xandikos/>`_ or from `my
-personal server <https://www.jelmer.uk/code/xandikos>`_. E.g. by running either one of::
+You can either clone the Xandikos repository at `GitHub <https://github.com/jelmer/xandikos/>`_:
 
    $ git clone https://github.com/jelmer/xandikos
-   $ git clone https://jelmer.uk/code/xandikos
 
-Tarballs
+Releases
 ########
 
-.. include:: tarballs.rst
+For a list of releases, see the `Releases page on GitHub <https://github.com/jelmer/xandikos/releases>`_.
 
 Debian/Ubuntu
 #############
@@ -36,3 +34,10 @@ nightly snapshot of Xandikos built by the `Debian Janitor
     sudo curl -o /usr/share/keyrings/debian-janitor.gpg https://janitor.debian.net/pgp_keys
     sudo apt update
     sudo apt install -t fresh-snapshots xandikos
+
+Docker
+######
+
+Xandikos is also available as a Docker image on ``ghcr.io/jelmer/xandikos``. You can pull it using::
+
+    docker pull ghcr.io/jelmer/xandikos:latest
