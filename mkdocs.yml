@@ -1,0 +1,39 @@
+site_name: Xandikos
+site_url: https://www.xandikos.org/
+repo_url: https://github.com/jelmer/xandikos
+repo_name: jelmer/xandikos
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+  palette:
+    scheme: default
+
+plugins:
+  - search
+  - blog:
+      blog_dir: news
+      post_url_format: "{slug}"
+
+nav:
+  - Home: index.md
+  - News: news/index.md
+  - Setup:
+    - Download: download.md
+    - Deployment: deployment.md
+    - Authentication: authentication.md
+    - Configuration: configuration.md
+    - Docker: docker.md
+  - Clients: clients.md
+  - Standards: standards.md
+  - Contributing: contributing.md
+  - Debugging: debugging.md
+  - Help: help.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jelmer/xandikos
