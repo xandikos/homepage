@@ -7,4 +7,5 @@ RUN make -C /code html
 
 FROM nginx:alpine
 COPY --from=builder /code/site /usr/share/nginx/html
-EXPOSE 80
+COPY nginx.conf /etc/nginx/nginx.conf
+EXPOSE 8080
